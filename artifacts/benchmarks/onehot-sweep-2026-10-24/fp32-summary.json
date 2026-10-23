@@ -1,0 +1,17 @@
+{
+  "pairs": 16,
+  "total_median_default_s": 5.571553,
+  "total_median_merge_s": 5.600649000000001,
+  "paired_total_change_median_pct": 0.24015376889228168,
+  "paired_total_change_bootstrap_95_pct": [
+    -0.3371430995402158,
+    2.615031549113822
+  ],
+  "pairs_total_won": 5,
+  "paired_commit_change_median_pct": 1.205593553024964,
+  "pairs_commit_won": 3,
+  "peak_rss_median_default_gib": 1.1858291625976562,
+  "peak_rss_median_merge_gib": 1.1771469116210938,
+  "proof_bytes_equal_all_pairs": true,
+  "verification_ok_all_runs": true
+}

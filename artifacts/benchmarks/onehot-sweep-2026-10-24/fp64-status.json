@@ -1,0 +1,111 @@
+{
+  "status": "complete",
+  "case": "onehot_fp64:35:1:direct",
+  "parent_commit": "dfdbd7674cab5cfbe95243e947d1b10a982f232b",
+  "selector_commit": "bc512f242ef637071191dc20714e63688c414e08",
+  "binary_sha256": {
+    "parent": "a34948056b6558484453ffc29e7a08da9e8906fe72b2088f60f50c0df9c7b5be",
+    "selector": "3634611ebe82a0220bc52a09c527fddcf9afe468e681e4588bd9ecefd711783f"
+  },
+  "quiet_rule": {
+    "load_average_1_min_max": 4.0,
+    "cpu_idle_percent_min": 65.0,
+    "memory_free_percent_min": 40,
+    "consecutive_samples": 3,
+    "sample_interval_seconds": 20,
+    "maximum_wait_seconds": 900
+  },
+  "samples": [
+    {
+      "time_unix": 1792786103.9285839,
+      "load_average_1_5_15": [
+        5.66,
+        6.91,
+        10.61
+      ],
+      "cpu_idle_percent": 33.97,
+      "memory_free_percent": 59,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792786124.547054,
+      "load_average_1_5_15": [
+        4.84,
+        6.64,
+        10.4
+      ],
+      "cpu_idle_percent": 72.79,
+      "memory_free_percent": 60,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792786145.146396,
+      "load_average_1_5_15": [
+        3.96,
+        6.32,
+        10.2
+      ],
+      "cpu_idle_percent": 70.43,
+      "memory_free_percent": 59,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792786165.760158,
+      "load_average_1_5_15": [
+        3.33,
+        6.02,
+        10.0
+      ],
+      "cpu_idle_percent": 71.77,
+      "memory_free_percent": 60,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792786186.358325,
+      "load_average_1_5_15": [
+        3.03,
+        5.78,
+        9.82
+      ],
+      "cpu_idle_percent": 69.28,
+      "memory_free_percent": 61,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    }
+  ],
+  "warmups": {
+    "parent": {
+      "exit_code": 0,
+      "sweep": "bucketed",
+      "proof_bytes": 77438,
+      "multi_verify": true,
+      "single_verify": true
+    },
+    "selector": {
+      "exit_code": 0,
+      "sweep": "merge",
+      "proof_bytes": 77438,
+      "multi_verify": true,
+      "single_verify": true
+    }
+  },
+  "benchmark_started_unix": 1792786210.587064,
+  "runner_exit_code": 0,
+  "ended_unix": 1792786573.3559759,
+  "host_after": {
+    "time_unix": 1792786573.969609,
+    "load_average_1_5_15": [
+      7.2,
+      6.65,
+      8.78
+    ],
+    "cpu_idle_percent": 65.12,
+    "memory_free_percent": 57,
+    "logical_cpus": 12,
+    "physical_memory_bytes": 25769803776
+  }
+}

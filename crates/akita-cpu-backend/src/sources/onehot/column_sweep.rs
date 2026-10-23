@@ -460,9 +460,11 @@ where
     let block_tile = block_tile_for_scratch::<F, D>(total, active_a_cols, max_entries)?;
     let blocks_per_worker = total.div_ceil(workers);
     let sweep = forced_sweep.unwrap_or_else(|| {
-        let high_dimension_merge = D >= 1024 && active_a_cols > 256 && blocks_per_worker >= 32;
-        if high_dimension_merge {
-            // At high D, merge can amortize wide column-window work across enough blocks.
+        let d1024_merge = D == 1024 && active_a_cols > 256 && blocks_per_worker >= 32;
+        if d1024_merge {
+            // The D=1024 measurement shows a commitment-stage improvement,
+            // though its end-to-end result is still inconclusive. Keep higher
+            // dimensions on the general selector until measurements support it.
             OneHotSweep::Merge
         } else {
             select_sweep(total, active_a_cols, workers)

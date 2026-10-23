@@ -1,0 +1,73 @@
+{
+  "status": "running_pairs",
+  "case": "onehot_fp32:34:1:direct",
+  "parent_commit": "dfdbd7674cab5cfbe95243e947d1b10a982f232b",
+  "selector_commit": "bc512f242ef637071191dc20714e63688c414e08",
+  "binary_sha256": {
+    "parent": "2e3a0e1e8072ad151118c57ddf6a7e71f2b9c2f6dd257e42708af05ecdb10e43",
+    "selector": "28e662236e617ea2f0afeec924cf5abf8332e4e54b988dbfd4e01cf3196ea106"
+  },
+  "quiet_rule": {
+    "load_average_1_min_max": 8.0,
+    "cpu_idle_percent_min": 65.0,
+    "memory_free_percent_min": 40,
+    "consecutive_samples": 3,
+    "sample_interval_seconds": 20,
+    "maximum_wait_seconds": 900
+  },
+  "samples": [
+    {
+      "time_unix": 1792788277.157566,
+      "load_average_1_5_15": [
+        3.85,
+        7.49,
+        9.83
+      ],
+      "cpu_idle_percent": 79.27,
+      "memory_free_percent": 74,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792788297.7578728,
+      "load_average_1_5_15": [
+        3.98,
+        7.29,
+        9.71
+      ],
+      "cpu_idle_percent": 75.11,
+      "memory_free_percent": 74,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    },
+    {
+      "time_unix": 1792788318.318789,
+      "load_average_1_5_15": [
+        4.21,
+        7.13,
+        9.59
+      ],
+      "cpu_idle_percent": 77.79,
+      "memory_free_percent": 74,
+      "logical_cpus": 12,
+      "physical_memory_bytes": 25769803776
+    }
+  ],
+  "warmups": {
+    "parent": {
+      "exit_code": 0,
+      "sweep": "bucketed",
+      "proof_bytes": 75398,
+      "multi_verify": true,
+      "single_verify": true
+    },
+    "selector": {
+      "exit_code": 0,
+      "sweep": "merge",
+      "proof_bytes": 75398,
+      "multi_verify": true,
+      "single_verify": true
+    }
+  },
+  "benchmark_started_unix": 1792788332.998894
+}
