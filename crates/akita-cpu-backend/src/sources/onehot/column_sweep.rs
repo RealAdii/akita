@@ -458,7 +458,16 @@ where
     };
     let max_entries = max_entries_per_block::<D, I>(sources, num_positions_per_block)?;
     let block_tile = block_tile_for_scratch::<F, D>(total, active_a_cols, max_entries)?;
-    let sweep = forced_sweep.unwrap_or_else(|| select_sweep(total, active_a_cols, workers));
+    let blocks_per_worker = total.div_ceil(workers);
+    let sweep = forced_sweep.unwrap_or_else(|| {
+        let high_dimension_merge = D >= 1024 && active_a_cols > 256 && blocks_per_worker >= 32;
+        if high_dimension_merge {
+            // At high D, merge can amortize wide column-window work across enough blocks.
+            OneHotSweep::Merge
+        } else {
+            select_sweep(total, active_a_cols, workers)
+        }
+    });
     let matrix_passes = estimated_matrix_passes(total, workers, block_tile);
     tracing::info!(
         sweep = sweep.label(),
