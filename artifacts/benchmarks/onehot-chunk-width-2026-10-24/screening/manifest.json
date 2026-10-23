@@ -1,0 +1,19 @@
+{
+  "case": "onehot_fp64:35:1:direct",
+  "source_commit": "fac45c9d80b92556c1c2f729ed89d65ee0af0b47",
+  "screening_pairs_per_width": 4,
+  "widths": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "binary_sha256": {
+    "16": "76a1e0acaa5b3e8811967de7b388a70ee172cecb552982b66002aa645af7b5a0",
+    "32": "732c4e88dd8ad6ae17e44968b82c43f8a1f32c89eab2b5b134b0998cb8fd4de6",
+    "64": "39c27b96219b1aa9d14b58e509b82b1b64ca19b661e5dff9d07e6654e1d42ad8",
+    "128": "46a125a6ffb564ead3ebeb5457bef649c1481ee8cc159d014d1c1c48d0cb7e01"
+  },
+  "order_seed": 1024,
+  "purpose": "screening only, not final performance evidence"
+}

@@ -1,0 +1,19 @@
+{
+  "pairs": 16,
+  "baseline_width": 32,
+  "candidate_width": 16,
+  "paired_total_change_median_pct": 1.4284163001990091,
+  "paired_total_change_95pct_bootstrap": [
+    -8.62565676495306,
+    13.304610072102596
+  ],
+  "total_wins": 7,
+  "paired_commit_change_median_pct": 2.649789969894789,
+  "commit_wins": 6,
+  "median_total_baseline_s": 6.6484505,
+  "median_total_candidate_s": 6.7549155,
+  "median_peak_rss_baseline_gib": 1.98907470703125,
+  "median_peak_rss_candidate_gib": 1.9931259155273438,
+  "proof_bytes_equal_all_pairs": true,
+  "both_verifiers_passed_all_runs": true
+}

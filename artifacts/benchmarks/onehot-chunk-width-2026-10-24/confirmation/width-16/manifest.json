@@ -1,0 +1,14 @@
+{
+  "case": "onehot_fp64:35:1:direct",
+  "source_commit": "fac45c9d80b92556c1c2f729ed89d65ee0af0b47",
+  "baseline_chunk_width": 32,
+  "candidate_chunk_width": 16,
+  "baseline_sha256": "732c4e88dd8ad6ae17e44968b82c43f8a1f32c89eab2b5b134b0998cb8fd4de6",
+  "candidate_sha256": "76a1e0acaa5b3e8811967de7b388a70ee172cecb552982b66002aa645af7b5a0",
+  "pairs": 16,
+  "order_seed": 20261024,
+  "build_toolchain": "Rust 1.95.0",
+  "features": "parallel,profile-ci-fp64,transcript-blake2b",
+  "measurement": "fresh process, setup + commitment + proving, both verifiers, peak RSS",
+  "bootstrap_resamples": 50000
+}

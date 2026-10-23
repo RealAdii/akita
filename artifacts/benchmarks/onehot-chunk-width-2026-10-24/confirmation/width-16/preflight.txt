@@ -1,0 +1,72 @@
+uptime
+ 3:10  up 7 days, 18:39, 2 users, load averages: 6.64 6.78 8.71
+
+
+top -l 3 -s 5 -n 0
+Processes: 675 total, 3 running, 672 sleeping, 5944 threads
+2026/10/24 03:10:26
+Load Avg: 6.64, 6.78, 8.71
+CPU usage: 12.3% user, 19.90% sys, 68.5% idle
+SharedLibs: 472M resident, 90M data, 68M linkedit.
+MemRegions: 953781 total, 6915M resident, 126M private, 2272M shared.
+PhysMem: 21G used (3556M wired, 6582M compressor), 2194M unused.
+VM: 353T vsize, 5361M framework vsize, 12502995(0) swapins, 15520906(0) swapouts.
+Networks: packets: 88456478/162G in, 63378085/128G out.
+Disks: 264427319/3863G read, 68646929/1435G written.
+
+
+Processes: 674 total, 7 running, 2 stuck, 665 sleeping, 5914 threads
+2026/10/24 03:10:31
+Load Avg: 6.43, 6.73, 8.68
+CPU usage: 12.12% user, 11.96% sys, 75.90% idle
+SharedLibs: 472M resident, 90M data, 68M linkedit.
+MemRegions: 0 total, 0B resident, 126M private, 2272M shared.
+PhysMem: 21G used (3766M wired, 6566M compressor), 2243M unused.
+VM: 351T vsize, 5361M framework vsize, 12502995(0) swapins, 15520906(0) swapouts.
+Networks: packets: 88457467/162G in, 63378317/128G out.
+Disks: 264444063/3863G read, 68647478/1435G written.
+
+
+Processes: 674 total, 4 running, 670 sleeping, 5933 threads
+2026/10/24 03:10:36
+Load Avg: 6.23, 6.69, 8.65
+CPU usage: 16.3% user, 11.77% sys, 72.18% idle
+SharedLibs: 472M resident, 90M data, 68M linkedit.
+MemRegions: 12656 total, 109M resident, 126M private, 2284M shared.
+PhysMem: 21G used (3515M wired, 6475M compressor), 2220M unused.
+VM: 350T vsize, 5361M framework vsize, 12502995(0) swapins, 15520906(0) swapouts.
+Networks: packets: 88458776/162G in, 63378694/128G out.
+Disks: 264459236/3863G read, 68647875/1435G written.
+
+
+
+
+memory_pressure
+The system has 25769803776 (1572864 pages with a page size of 16384).
+
+Stats:
+Pages free: 138356
+Pages purgeable: 8552
+Pages purged: 114229617
+
+Swap I/O:
+Swapins: 12502995
+Swapouts: 15520906
+
+Page Q counts:
+Pages active: 376827
+Pages inactive: 371679
+Pages speculative: 4085
+Pages throttled: 0
+Pages wired down: 224933
+
+Compressor Stats:
+Pages used by compressor: 414426
+Pages decompressed: 1125947120
+Pages compressed: 1381352747
+
+File I/O:
+Pageins: 182054428
+Pageouts: 2659096
+
+System-wide memory free percentage: 58%

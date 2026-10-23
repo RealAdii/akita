@@ -1,0 +1,22 @@
+{
+  "width": 16,
+  "baseline_width": 32,
+  "pairs": 4,
+  "screening_only": true,
+  "median_change_pct": {
+    "setup_s": 88.292,
+    "commit_s": -2.056,
+    "prove_s": -6.959,
+    "elapsed_s": null
+  },
+  "wins_vs_32": {
+    "setup_s": 2,
+    "commit_s": 3,
+    "prove_s": 3,
+    "elapsed_s": 0
+  },
+  "all_proof_sizes_equal": true,
+  "all_verifiers_passed": true,
+  "paired_total_change_median_pct": -0.5324207774957013,
+  "paired_total_wins": 3
+}
