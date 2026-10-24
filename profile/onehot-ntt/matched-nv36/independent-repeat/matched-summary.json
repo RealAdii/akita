@@ -1,0 +1,214 @@
+{
+  "all_runs_passed_both_verifiers": true,
+  "bootstrap_resamples": 50000,
+  "bootstrap_seed": 20261025,
+  "collected_at": "2026-10-24T04:16:08.015151+00:00",
+  "machine": {
+    "baseline_source": "cc3ea3690d5a17123c2309c5ec84c41341005e96",
+    "binary_sha256": {
+      "base_accum": "93c6146d9db860ed48d17b5ff6f4baab52fb3d0029f14879aa8e13573ca5f8de",
+      "candidate_accum": "7e692332b1c3c279d23e917d032373235e89e4a69653153c625cb87d62554530",
+      "candidate_ntt": "7e692332b1c3c279d23e917d032373235e89e4a69653153c625cb87d62554530"
+    },
+    "candidate_source": "a2b5ba81d8acfb554c4a75b8ea0a7a312d218480",
+    "case": "onehot_fp128:36:1:direct:standard",
+    "count": 12,
+    "logical_cpus": 12,
+    "physical_memory_bytes": 25769803776,
+    "threads": 8
+  },
+  "orders_per_position": {
+    "base_accum": {
+      "0": 4,
+      "1": 4,
+      "2": 4
+    },
+    "candidate_accum": {
+      "0": 4,
+      "1": 4,
+      "2": 4
+    },
+    "candidate_ntt": {
+      "0": 4,
+      "1": 4,
+      "2": 4
+    }
+  },
+  "paired_results": {
+    "candidate_accum_vs_base_accum": {
+      "commit_s": {
+        "faster_pairs": 0,
+        "paired_bootstrap_95_percent_interval": [
+          0.9991365137431707,
+          4.546023331367288
+        ],
+        "paired_median_delta_percent": 2.855395575216091
+      },
+      "prove_s": {
+        "faster_pairs": 3,
+        "paired_bootstrap_95_percent_interval": [
+          -4.920593283912488,
+          5.593602549612098
+        ],
+        "paired_median_delta_percent": 1.976503730573198
+      },
+      "setup_commit_prove_total_s": {
+        "faster_pairs": 2,
+        "paired_bootstrap_95_percent_interval": [
+          1.3620930374174556,
+          3.676086781910737
+        ],
+        "paired_median_delta_percent": 2.3124905560844455
+      },
+      "setup_s": {
+        "faster_pairs": 7,
+        "paired_bootstrap_95_percent_interval": [
+          -28.66888527594903,
+          13.618389527798612
+        ],
+        "paired_median_delta_percent": -15.295647579763234
+      },
+      "verify_multi_s": {
+        "faster_pairs": 6,
+        "paired_bootstrap_95_percent_interval": [
+          -20.71677392863701,
+          9.178908639189043
+        ],
+        "paired_median_delta_percent": -2.4960629361789444
+      },
+      "verify_single_s": {
+        "faster_pairs": 7,
+        "paired_bootstrap_95_percent_interval": [
+          -1.0361792396609282,
+          0.7032571767740858
+        ],
+        "paired_median_delta_percent": -0.2969236386459573
+      }
+    },
+    "candidate_ntt_vs_base_accum": {
+      "commit_s": {
+        "faster_pairs": 12,
+        "paired_bootstrap_95_percent_interval": [
+          -43.827063747647365,
+          -42.33339565209868
+        ],
+        "paired_median_delta_percent": -43.091476920594616
+      },
+      "prove_s": {
+        "faster_pairs": 2,
+        "paired_bootstrap_95_percent_interval": [
+          3.0456840109308825,
+          8.759109246311514
+        ],
+        "paired_median_delta_percent": 5.810013495868738
+      },
+      "setup_commit_prove_total_s": {
+        "faster_pairs": 12,
+        "paired_bootstrap_95_percent_interval": [
+          -33.62659554989735,
+          -32.15420731519576
+        ],
+        "paired_median_delta_percent": -33.12045961455269
+      },
+      "setup_s": {
+        "faster_pairs": 1,
+        "paired_bootstrap_95_percent_interval": [
+          5.079197490695764,
+          19.311474250796756
+        ],
+        "paired_median_delta_percent": 9.972022011925151
+      },
+      "verify_multi_s": {
+        "faster_pairs": 5,
+        "paired_bootstrap_95_percent_interval": [
+          -9.978800034870439,
+          26.954816012441274
+        ],
+        "paired_median_delta_percent": 2.913392907536061
+      },
+      "verify_single_s": {
+        "faster_pairs": 4,
+        "paired_bootstrap_95_percent_interval": [
+          -0.5816945156861708,
+          2.5075581723276397
+        ],
+        "paired_median_delta_percent": 0.8041863694363882
+      }
+    },
+    "candidate_ntt_vs_candidate_accum": {
+      "commit_s": {
+        "faster_pairs": 12,
+        "paired_bootstrap_95_percent_interval": [
+          -45.446000952167154,
+          -42.90386399486247
+        ],
+        "paired_median_delta_percent": -44.78643586944288
+      },
+      "prove_s": {
+        "faster_pairs": 2,
+        "paired_bootstrap_95_percent_interval": [
+          1.2073622385533334,
+          8.00637869996943
+        ],
+        "paired_median_delta_percent": 4.9378629565756675
+      },
+      "setup_commit_prove_total_s": {
+        "faster_pairs": 12,
+        "paired_bootstrap_95_percent_interval": [
+          -35.674655293709755,
+          -32.63457806282636
+        ],
+        "paired_median_delta_percent": -34.28878669841748
+      },
+      "setup_s": {
+        "faster_pairs": 1,
+        "paired_bootstrap_95_percent_interval": [
+          9.40742782564843,
+          57.66503583960441
+        ],
+        "paired_median_delta_percent": 21.787486671562828
+      },
+      "verify_multi_s": {
+        "faster_pairs": 3,
+        "paired_bootstrap_95_percent_interval": [
+          -5.402879038595154,
+          114.26602646180437
+        ],
+        "paired_median_delta_percent": 16.255706334813567
+      },
+      "verify_single_s": {
+        "faster_pairs": 5,
+        "paired_bootstrap_95_percent_interval": [
+          -0.5906418294778337,
+          3.8070856144230447
+        ],
+        "paired_median_delta_percent": 0.7039394742657135
+      }
+    }
+  },
+  "peak_rss_measured_for_all_runs": true,
+  "proof_bytes": 81763,
+  "quiet_rule": {
+    "available_memory_percent_min": 40.0,
+    "consecutive_samples": 3,
+    "cpu_idle_percent_min": 65.0,
+    "load_average_1_min_max": 6.0
+  },
+  "quiet_samples": [
+    {
+      "available_memory_percent": 56.213696797688804,
+      "cpu_idle_percent": 85.3,
+      "load_average_1_min": 3.20654296875
+    },
+    {
+      "available_memory_percent": 56.45904541015625,
+      "cpu_idle_percent": 82.7,
+      "load_average_1_min": 3.01416015625
+    },
+    {
+      "available_memory_percent": 55.53932189941406,
+      "cpu_idle_percent": 84.4,
+      "load_average_1_min": 3.32763671875
+    }
+  ]
+}

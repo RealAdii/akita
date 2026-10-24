@@ -8,6 +8,16 @@ The benefit came from commitment: median commitment time fell **42.74%** (95% in
 
 Median peak RSS was 10.18 GiB for base accumulation and 10.07 GiB for candidate NTT, a 1.08% decrease. Candidate accumulation was 10.57 GiB, 3.85% above base. All 36 proof runs produced 81,763-byte proofs and passed both verifier modes.
 
+## Independent repeat and pooled analysis
+
+A separate 12-pair run on the same pinned binaries reproduced the result. Candidate exact NTT reduced median setup + commitment + proving time by **33.12%** versus base accumulation, faster in all 12 pairs. The paired bootstrap 95% interval was -33.63% to -32.15%. Setup was 9.97% slower, commitment 43.09% faster, proving 5.81% slower, and median peak RSS 6.32% lower. All 36 runs passed both verifier modes and reported the same proof size.
+
+Across the initial and repeat batches, the pooled 24-pair median total-time change was **-33.12%** (95% paired bootstrap interval -33.41% to -32.55%), faster in all 24 pairs. The initial batch had a brief low-priority research-script overlap at an unknown arm. The separate repeat passed the quiet-host gate and avoids that specifically noted overlap.
+
+Candidate exact NTT and candidate accumulation produced byte-identical commitment and proof artifacts in all 12 repeat pairs. Base artifacts were not saved, so this comparison makes no byte-identity claim against the base arm.
+
+The complete independent-repeat packet is in [`independent-repeat/`](independent-repeat/), including the 36 measurements, all measured logs, candidate artifacts, and checksums. `matched-combined.csv` and `matched-combined-summary.json` contain both batches and the pooled calculation.
+
 ## Method
 
 - Case: `onehot_fp128:36:1:direct:standard` (direct, non-recursive fp128 one-hot, nv36, one polynomial).

@@ -1,0 +1,65 @@
+{
+  "baseline_source": "cc3ea3690d5a17123c2309c5ec84c41341005e96",
+  "batches": {
+    "independent_repeat": {
+      "csv": "matched-runs.csv",
+      "note": "Separate repeat with balanced randomized order and a passing three-sample quiet-host gate.",
+      "pairs": 12
+    },
+    "initial_batch": {
+      "csv": "../nv36/matched-runs.csv",
+      "note": "The initial batch had a brief low-priority research-script overlap at an unknown arm.",
+      "pairs": 12
+    }
+  },
+  "candidate_source": "a2b5ba81d8acfb554c4a75b8ea0a7a312d218480",
+  "case": "onehot_fp128:36:1:direct:standard",
+  "delta_convention": "negative means candidate used less time than base",
+  "paired_results": {
+    "commit_s": {
+      "bootstrap_resamples": 50000,
+      "bootstrap_seed": 20261050,
+      "faster_pairs": 24,
+      "paired_bootstrap_95_percent_interval": [
+        -43.51843868338844,
+        -42.249677922297764
+      ],
+      "paired_count": 24,
+      "paired_median_delta_percent": -43.01429513515505
+    },
+    "prove_s": {
+      "bootstrap_resamples": 50000,
+      "bootstrap_seed": 20261050,
+      "faster_pairs": 5,
+      "paired_bootstrap_95_percent_interval": [
+        2.081875386005261,
+        5.580533138499688
+      ],
+      "paired_count": 24,
+      "paired_median_delta_percent": 3.0873679568567125
+    },
+    "setup_s": {
+      "bootstrap_resamples": 50000,
+      "bootstrap_seed": 20261050,
+      "faster_pairs": 2,
+      "paired_bootstrap_95_percent_interval": [
+        6.163188202879,
+        19.311474250796756
+      ],
+      "paired_count": 24,
+      "paired_median_delta_percent": 12.78138507278629
+    },
+    "total_s": {
+      "bootstrap_resamples": 50000,
+      "bootstrap_seed": 20261050,
+      "faster_pairs": 24,
+      "paired_bootstrap_95_percent_interval": [
+        -33.41070633650137,
+        -32.54953626885201
+      ],
+      "paired_count": 24,
+      "paired_median_delta_percent": -33.12045961455269
+    }
+  },
+  "pooled_pair_count": 24
+}
