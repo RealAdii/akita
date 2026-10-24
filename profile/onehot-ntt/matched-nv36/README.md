@@ -12,7 +12,7 @@ Median peak RSS was 10.18 GiB for base accumulation and 10.07 GiB for candidate 
 
 A separate 12-pair run on the same pinned binaries reproduced the result. Candidate exact NTT reduced median setup + commitment + proving time by **33.12%** versus base accumulation, faster in all 12 pairs. The paired bootstrap 95% interval was -33.63% to -32.15%. Setup was 9.97% slower, commitment 43.09% faster, proving 5.81% slower, and median peak RSS 6.32% lower. All 36 runs passed both verifier modes and reported the same proof size.
 
-Across the initial and repeat batches, the pooled 24-pair median total-time change was **-33.12%** (95% paired bootstrap interval -33.41% to -32.55%), faster in all 24 pairs. The initial batch had a brief low-priority research-script overlap at an unknown arm. The separate repeat passed the quiet-host gate and avoids that specifically noted overlap.
+Across the initial and repeat batches, the pooled 24-pair median total-time change was **-33.12%** (95% paired bootstrap interval -33.41% to -32.55%), faster in all 24 pairs. The initial batch had a brief low-priority research-script overlap at an unknown arm. The runner recorded three values that meet its quiet-host thresholds for the separate repeat. The summary omits timestamps, so sample spacing cannot be independently audited. The repeat avoids the specifically noted script overlap.
 
 Candidate exact NTT and candidate accumulation produced byte-identical commitment and proof artifacts in all 12 repeat pairs. Base artifacts were not saved, so this comparison makes no byte-identity claim against the base arm.
 
@@ -24,7 +24,7 @@ The complete independent-repeat packet is in [`independent-repeat/`](independent
 - Compared three arms in randomized, paired triplets: base accumulation, candidate accumulation, and candidate exact NTT.
 - 12 pairs, 8 threads, 12 logical CPUs, 24 GiB physical memory.
 - Paired bootstrap: 50,000 resamples, seed `20261024`.
-- Each arm appeared four times in each run position. Three readiness samples met the runner's quiet rule before measurement.
+- Each arm appeared four times in each run position. The runner recorded three readiness values that meet its quiet thresholds. It does not record timestamps, so the packet cannot independently verify those samples were consecutive.
 - Base source: `cc3ea3690d5a17123c2309c5ec84c41341005e96`.
 - Candidate source: `a2b5ba81d8acfb554c4a75b8ea0a7a312d218480`.
 - Base binary SHA-256: `93c6146d9db860ed48d17b5ff6f4baab52fb3d0029f14879aa8e13573ca5f8de`.

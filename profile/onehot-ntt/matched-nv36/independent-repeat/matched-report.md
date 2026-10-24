@@ -26,7 +26,7 @@ All 36 runs in this repeat exited successfully, passed both verifier modes, and 
 - A different randomized order seed from the first batch. Each arm occupied each of the three run positions four times.
 - 8 worker threads on a host reporting 12 logical CPUs and 24 GiB physical memory.
 - 50,000 paired bootstrap resamples, seed `20261025` for this repeat.
-- Three pre-run readiness samples passed the runner gate: CPU idle 82.7% to 85.3%, one-minute load 3.01 to 3.33, available memory 55.54% to 56.46%.
+- The runner recorded three readiness values that meet its thresholds: CPU idle 82.7% to 85.3%, one-minute load 3.01 to 3.33, available memory 55.54% to 56.46%. Its code requires three consecutive qualifying samples, but timestamps were not saved, so the packet cannot independently verify their spacing.
 - The specific low-priority script overlap identified in the initial batch was not part of this repeat. The measured CSV, logs, saved candidate artifacts, and runner are included here.
 - Base source: `cc3ea3690d5a17123c2309c5ec84c41341005e96`.
 - Candidate source: `a2b5ba81d8acfb554c4a75b8ea0a7a312d218480`.
